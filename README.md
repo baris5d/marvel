@@ -11,13 +11,13 @@ To get a local copy up and running follow these simple example steps.
 ## Built with
 * [NextJs](https://nextjs.org)
 
-* [Tailwind CSS](tailwindcss.com/)
+* [Tailwind CSS](https://tailwindcss.com/)
 
 ## Deployed on 
 * [Vercel](https://vercel.com/)
 
 # Prerequisites
-1. Get your API Key at [developer.marvel.com/](developer.marvel.com/)
+1. Get your API Key at [developer.marvel.com/](https://developer.marvel.com/)
 2. Clone the repo
    ```sh
    git clone https://github.com/baris5d/marvel.git
