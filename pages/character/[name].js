@@ -28,7 +28,7 @@ const CharacterInfo = ({ characterData, comicDetail }) => {
                     <h2 className="text-xl mt-6 mb-4">Comics</h2>
                     <section className="grid md:grid-cols-2 grid-cols-1">
                         { comics.map((comic,i) => {
-                            return <div key={i} className="grid grid-cols-4 gap-2 pb-6">
+                            return <div key={i} className="grid grid-cols-4 gap-2 pr-2 pb-6">
                                 <div className="col-span-1">
                                     <img src={comic.thumbnail.path+"/standard_medium.jpg"} className="place" />
                                 </div>
@@ -37,7 +37,8 @@ const CharacterInfo = ({ characterData, comicDetail }) => {
                                     <small>{new Date(comic.dates[0].date).getFullYear()}</small>
                                 </div>
                             </div>
-                        }) || "There's no Comics since 2005"}
+                        })}
+                        {comics.length < 1 ? <p>There's no Comics since 2005</p> : ''}
                     </section>
                 </div>
             </div>
