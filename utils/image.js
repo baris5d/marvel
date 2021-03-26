@@ -8,6 +8,7 @@ const Image = ({src, alt, className, ...props}) => {
 
     return(
     <>
+        <img src={imageSrc} onLoad={() => setLoaded(true) } onError={() => setImageSrc("http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/portrait_uncanny.jpg")} alt={alt} className={className} />
         { !loaded ? <ContentLoader 
             speed={4}
             width={224.5}
@@ -19,7 +20,6 @@ const Image = ({src, alt, className, ...props}) => {
         >
             <rect x="0" y="0" rx="0" ry="0" width="100%" height="100%" />
         </ContentLoader> : '' }
-        <img src={imageSrc} onLoad={() => setLoaded(true) } onError={() => setImageSrc("http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/portrait_uncanny.jpg")} alt={alt} className={className} />
     </>
     )
 }
