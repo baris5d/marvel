@@ -1,0 +1,39 @@
+.card {
+    transition: .5s transform ease-out;
+    @apply
+    relative
+}
+.card:hover{
+    transform: scale(1.2);
+    z-index: 3;
+    @apply
+    shadow-2xl
+}
+
+.card::before {
+    content: '';
+    height:100%;
+    width:100%;
+    z-index: 1;
+    @apply
+    absolute
+    bottom-0
+    bg-gradient-to-t
+    from-black
+}
+
+.characterImage {
+    @apply
+    relative
+}
+
+.characterName {
+    z-index: 2;
+    @apply
+    text-white
+    text-2xl
+    px-4
+    pb-4
+    absolute
+    bottom-0
+}
