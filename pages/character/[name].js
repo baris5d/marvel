@@ -11,7 +11,6 @@ const CharacterInfo = ({ characterData, comicDetail }) => {
     const [ character, setCharacter ] = useState(characterData.data.data.results[0])
     const [ comics, setComics ] = useState(comicDetail.data.data.results)
     const router = useRouter()
-    console.log(character)
     return (
         <div className="sm:container mx-auto grid justify-items-center p-4 sm:p-1">
             <div className="w-full flex place-items-center gap-4 pt-6">
