@@ -2,10 +2,12 @@
     @apply
     grid 
     justify-items-start
+    pl-12
 }
 
 .logo{
     @apply
     box-content 
-    h-24
+    h-12
+    sm:h-24
 }

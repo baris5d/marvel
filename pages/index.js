@@ -32,7 +32,7 @@ const HomePage = ({ characterData }) => {
   return (
     <div className="container mx-auto pt-6">
       <Header />
-      <div className="grid grid-cols-6 gap-6 pt-12 pb-12">
+      <div className="grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:p-12 gap-6 p-12">
         <CardList data={characters} />
       </div>
       <div className="grid py-12">
@@ -41,6 +41,7 @@ const HomePage = ({ characterData }) => {
     </div>
   )
 }
+
 export const getServerSideProps = async ({ context }) => {
   const page = 1
   const limit = AppConfig.ITEMS_PER_PAGE

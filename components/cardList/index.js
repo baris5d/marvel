@@ -19,7 +19,7 @@ const CardList = ({data}) => {
       return(
         <>
             {characters.map((character, i) => 
-              <Card src={character.thumbnail.path+"/portrait_uncanny.jpg"} name={character.name} key={i}/>
+              <Card src={character.thumbnail.path+"/portrait_uncanny.jpg"} name={character.name} id={character.id} key={i}/>
             )}
         </>
       )

@@ -15,7 +15,10 @@
     "js-md5": "^0.7.3",
     "next": "^10.0.9",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-ionicons": "^4.2.0",
+    "react-waypoint": "^9.0.3",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "@tailwindcss/jit": "^0.1.5",
