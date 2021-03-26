@@ -8,7 +8,7 @@ const Image = ({src, alt, className, ...props}) => {
 
     return(
     <>
-        <img src={imageSrc} onLoad={() => setLoaded(true) } onError={() => setImageSrc("http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/portrait_uncanny.jpg")} alt={alt} className={className} />
+        <img src={imageSrc} onLoad={() => setLoaded(true) } onError={() => setImageSrc("http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/portrait_uncanny.jpg")} alt={alt} className={[...className, "z-0"]} />
         { !loaded ? <ContentLoader 
             speed={4}
             width={224.5}
