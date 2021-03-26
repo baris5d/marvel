@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Component renders correctly 1`] = `
+<div
+  className="card"
+  onClick={[Function]}
+>
+  <Image
+    alt="test"
+    className="characterImage"
+    src="test.jpg"
+  />
+  <h2
+    className="characterName"
+  >
+    test
+  </h2>
+</div>
+`;

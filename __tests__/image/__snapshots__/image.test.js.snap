@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image Component renders correctly 1`] = `
+<Fragment>
+  <img
+    alt="Abyss"
+    className={
+      Array [
+        undefined,
+        "z-0",
+      ]
+    }
+    onError={[Function]}
+    onLoad={[Function]}
+    src="http://i.annihil.us/u/prod/marvel/i/mg/3/80/4c00358ec7548/portrait_uncanny.jpg"
+  />
+  <ContentLoader
+    backgroundColor="#374151"
+    className="z-10 absolute t-0"
+    foregroundColor="#1f2937"
+    height={336.75}
+    speed={4}
+    viewBox="0 0 300 450"
+    width={224.5}
+  >
+    <rect
+      height="100%"
+      rx="0"
+      ry="0"
+      width="100%"
+      x="0"
+      y="0"
+    />
+  </ContentLoader>
+</Fragment>
+`;

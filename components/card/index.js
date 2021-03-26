@@ -9,6 +9,7 @@ export default function Card({ src, name, id, ...props }) {
     const detail = () => {
         router.push(`character/${id}`)
     }
+    if(src == null || name == null || id == null) return null;
     return (
         <div className={styles.card} onClick={detail}>
             <Image src={src} alt={name} className={styles.characterImage} />
