@@ -1,0 +1,11 @@
+.header{
+    @apply
+    grid 
+    justify-items-start
+}
+
+.logo{
+    @apply
+    box-content 
+    h-24
+}
