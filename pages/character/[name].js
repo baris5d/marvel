@@ -5,13 +5,17 @@ import AppConfig from '../../app.config'
 import Header from '../../components/header'
 import { useRouter } from 'next/router'
 import { ArrowBackCircleOutline } from 'react-ionicons'
+import Custom404 from '../404'
 
 
 const CharacterInfo = ({ characterData, comicDetail }) => {
+    const router = useRouter()
+    if(characterData.data.error) {
+        return <Custom404 />
+    }
     const [ character, setCharacter ] = useState(characterData.data.data.results[0])
     const [ comics, setComics ] = useState(comicDetail.data.data.results)
-    const router = useRouter()
-    return (
+      return (
         <div className="sm:container mx-auto grid justify-items-center p-4 sm:p-1">
             <div className="w-full flex place-items-center gap-4 pt-6">
                 <span className="cursor-pointer" onClick={() => router.back()}><ArrowBackCircleOutline color="#fff" width="50px" height="50px"/></span>

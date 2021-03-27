@@ -53,7 +53,6 @@ export const getServerSideProps = async ({ context }) => {
   hash.update(ts + process.env.PRIVATE_KEY + AppConfig.API_KEY);
 
   const query = `${AppConfig.API_GATEWAY}characters?ts=${ts}&hash=${hash}&apikey=${AppConfig.API_KEY}&limit=${limit}&offset=${page}`
-  console.log(query)
   characterData = await getCharacters(query)
   return { props: { characterData } }
 }
